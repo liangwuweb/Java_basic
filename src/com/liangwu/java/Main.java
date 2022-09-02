@@ -4,20 +4,22 @@ public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-    byte b= 1;
-    short sh = 1;
-    int i = 1;
-    long l = 1L;
+    int intValue1 = 56;
 
-    float f = 1f;
-    double d = 1d;
+    long longValue = intValue1;
+    System.out.println("long value is " + longValue);
 
-    System.out.println("Byte " + b);
-    System.out.println("Short " + sh);
-    System.out.println("Int " + i);
-    System.out.println("Long " + l);
-    System.out.println("Float " + f);
-    System.out.println("double " + d);
+    short shortValue = (short) intValue1;
+        System.out.println("short value is " + shortValue);
+
+    int intValue2 = 1028;
+    byte byteValue = (byte) intValue2;
+    System.out.println("byte value is " + byteValue);
+
+    double doubleValue = 3.999999d;
+    int intValue3 = (int) doubleValue;
+    System.out.println("Int value is " + intValue3);
+
 
 
     }

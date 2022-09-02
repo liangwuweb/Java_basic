@@ -1,32 +1,33 @@
 package com.liangwu.java;
 
 public class Main {
+    static boolean def;
 
     public static void main(String[] args) {
 	// write your code here
-    int intValue1 = 56;
-    int intValue2 = 42;
+    boolean b1 = true;
+    boolean b2 = false;
 
-    int result1 = intValue1 + intValue2;
-    System.out.println("addition: " + result1);
+    System.out.println("the value of b1 is: " + b1);
+    System.out.println("the value of b2 is: " + b2);
+        System.out.println("the value of def is: " + def);
 
-        int result2 = intValue1 - intValue2;
-        System.out.println("subtraction: " + result1);
+    boolean b3 = !b1;
+        System.out.println("the value of b3 is: " + b3);
 
-        int result3 = intValue1 * intValue2;
-        System.out.println("multiplication: " + result3);
+    int x = 0;
+    boolean b4= (x == 0);
+        System.out.println("the value of b4 is: " + b4);
 
-        double result4 = (double) intValue1 / intValue2;
-        System.out.println("Division: " + result4);
+    String sBoolean = "true";
+    boolean parsed = Boolean.parseBoolean(sBoolean);
+        System.out.println("the value of parsed is: " + parsed);
 
-        double result5 = (double) intValue1 % intValue2;
-        System.out.println("remainder: " + result5);
 
-        double doubleValue = -2.888;
-        long rounded = Math.round(doubleValue);
-        System.out.println("Rounded: " + rounded);
 
-        System.out.println("rounded & abs: " + Math.round(Math.abs(doubleValue)));
+
+
+
 
 
 

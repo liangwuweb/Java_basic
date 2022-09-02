@@ -5,20 +5,30 @@ public class Main {
     public static void main(String[] args) {
 	// write your code here
     int intValue1 = 56;
+    int intValue2 = 42;
 
-    long longValue = intValue1;
-    System.out.println("long value is " + longValue);
+    int result1 = intValue1 + intValue2;
+    System.out.println("addition: " + result1);
 
-    short shortValue = (short) intValue1;
-        System.out.println("short value is " + shortValue);
+        int result2 = intValue1 - intValue2;
+        System.out.println("subtraction: " + result1);
 
-    int intValue2 = 1028;
-    byte byteValue = (byte) intValue2;
-    System.out.println("byte value is " + byteValue);
+        int result3 = intValue1 * intValue2;
+        System.out.println("multiplication: " + result3);
 
-    double doubleValue = 3.999999d;
-    int intValue3 = (int) doubleValue;
-    System.out.println("Int value is " + intValue3);
+        double result4 = (double) intValue1 / intValue2;
+        System.out.println("Division: " + result4);
+
+        double result5 = (double) intValue1 % intValue2;
+        System.out.println("remainder: " + result5);
+
+        double doubleValue = -2.888;
+        long rounded = Math.round(doubleValue);
+        System.out.println("Rounded: " + rounded);
+
+        System.out.println("rounded & abs: " + Math.round(Math.abs(doubleValue)));
+
+
 
 
 

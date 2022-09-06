@@ -6,32 +6,24 @@ public class Main {
     static boolean def;
 
     public static void main(String[] args) {
-	    // write your code here
         String str1 = "Hello";
-        String str2 = "World";
-        String str3 = str1 + ", " + str2 + "!";
-        System.out.println(str3);
+        String str2 = "hello";
 
-        StringBuilder sb = new StringBuilder("Hello")
-                .append(", ")
-                .append("World")
-                .append("!");
-        System.out.println(sb);
-
-        Scanner scanner = new Scanner(System.in);
-//        System.out.print("Enter Value: ");
-//        String input = scanner.nextLine();
-//        System.out.println(input);
-
-        // Delete sb
-        sb.delete(0, sb.length());
-        System.out.println(sb);
-
-        for(int i = 0; i < 3; i++) {
-            String input = scanner.nextLine();
-            sb.append(input + "\n");
+        if (str1 == str2) {
+            System.out.println("They match");
+        } else {
+            System.out.println("They don't match");
         }
 
-        System.out.println(sb);
+        String part1 = "Hello ";
+        String part2 = "World";
+        String str4 = part1 + part2;
+        String str5 = "Hello World";
+        if (str4.equals(str5)) {
+            System.out.println("match");
+        } else {
+            System.out.println("no match");
+        }
+
     }
 }

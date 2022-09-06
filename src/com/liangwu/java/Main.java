@@ -1,30 +1,24 @@
 package com.liangwu.java;
-import java.text.DateFormat;
-import java.text.NumberFormat;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
+
 import java.util.Scanner;
-import java.util.Locale;
-import java.util.Date;
+
 
 public class Main {
 
     public static void main(String[] args) {
-        Date d = new Date();
-        System.out.println(d);
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a numeric Value: ");
+        String input1 = scanner.nextLine();
+        System.out.print("Enter a numeric Value: ");
+        String input2 = scanner.nextLine();
 
-        DateFormat df = DateFormat.getDateInstance(DateFormat.FULL);
-        System.out.println(df.format(d));
+        int a = Integer.parseInt(input1);
+        int b = Integer.parseInt(input2);
 
-        LocalDateTime ldt = LocalDateTime.now();
-        System.out.println(ldt);
+        int sum = a + b;
+        System.out.println("Sum is: " + sum);
 
-        LocalDate ld = LocalDate.of(2020, 9, 6);
-        System.out.println(ld);
 
-        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("M/d/yyyy");
-        System.out.println(dtf.format(ld));
 
     }
 }

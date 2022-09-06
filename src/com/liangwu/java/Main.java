@@ -5,36 +5,24 @@ public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-    char c1 = '1';
-    char c2 = '2';
-    char c3 = '3';
+        String s1 = "This is a String!";
+        System.out.println(s1);
 
-    System.out.println("Char 1: " + c1);
-    System.out.println("Char 2: " + c2);
-    System.out.println("Char 3: " + c3);
+        String s2 = new String("This is also a string!");
+        System.out.println(s2);
 
-    char dollarSign = '\u0024';
-    System.out.println("Dollar Sign: " + dollarSign);
+        String s3 = "Shirt size: ";
+        String s4 = "M";
+        String s5 = s3 + s4 + ", Qty: " + 4;
+        System.out.println(s5);
 
-    char a = 'a';
-    char b = 'b';
-    char c= 'c';
-    System.out.print(Character.toUpperCase(a));
-    System.out.print(Character.toUpperCase(b));
-    System.out.println(Character.toUpperCase(c));
-    System.out.print(Character.toUpperCase(c));
+        char[] chars = {'H', 'e', 'l', 'l', 'o'};
+        String s6 = new String(chars);
+        System.out.println(s6);
 
-
-
-
-
-
-
-
-
-
-
-
-
+        char[] chars2 = s6.toCharArray();
+        for (char c : chars2) {
+            System.out.println(c);
+        }
     }
 }

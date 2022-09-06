@@ -1,21 +1,30 @@
 package com.liangwu.java;
+import java.text.DateFormat;
 import java.text.NumberFormat;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 import java.util.Locale;
+import java.util.Date;
 
 public class Main {
 
     public static void main(String[] args) {
-        String s1 = "Welcome to Wisconsin!";
-        System.out.println("Length of string: " + s1.length());
+        Date d = new Date();
+        System.out.println(d);
 
-        int position = s1.indexOf("Wisconsin");
-        System.out.println("Position of substring: " + position);
+        DateFormat df = DateFormat.getDateInstance(DateFormat.FULL);
+        System.out.println(df.format(d));
 
-        String s2 = "welcome! ";
-        int len1 = s2.length();
-        System.out.println(len1);
-        String s3 = s2.trim();
-        System.out.println(s3.length());
+        LocalDateTime ldt = LocalDateTime.now();
+        System.out.println(ldt);
+
+        LocalDate ld = LocalDate.of(2020, 9, 6);
+        System.out.println(ld);
+
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("M/d/yyyy");
+        System.out.println(dtf.format(ld));
+
     }
 }

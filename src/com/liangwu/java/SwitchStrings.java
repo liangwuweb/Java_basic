@@ -3,23 +3,22 @@ package com.liangwu.java;
 import java.util.Scanner;
 
 
-public class Main {
+public class SwitchStrings {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter a number: ");
+        System.out.print("Enter a string: ");
         String input = sc.nextLine();
-        int monthNumber = Integer.parseInt(input);
 
-        switch (monthNumber) {
-            case 1:
+        switch (input) {
+            case "Jan":
                 System.out.println("The month is Jan");
                 break;
-            case 2:
+            case "Feb":
                 System.out.println("The month is Feb");
                 break;
-            case 3:
+            case "Mar":
                 System.out.println("The month is March");
                 break;
             default:

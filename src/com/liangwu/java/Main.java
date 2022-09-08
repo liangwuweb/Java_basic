@@ -4,26 +4,24 @@ import java.util.Scanner;
 
 
 public class Main {
-
+    static String[] months = {"Jan", "Feb", "Mar", "April", "May", "June",
+            "July", "August", "Sep", "Oct", "Nov", "Dec"};
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        loopIt("Month of the year");
+        loopIt("Second run");
+    }
 
-        System.out.print("Enter a number: ");
-        String input = sc.nextLine();
-        int monthNumber = Integer.parseInt(input);
+    static void loopIt(String label) {
+        System.out.println(label);
 
-        switch (monthNumber) {
-            case 1:
-                System.out.println("The month is Jan");
-                break;
-            case 2:
-                System.out.println("The month is Feb");
-                break;
-            case 3:
-                System.out.println("The month is March");
-                break;
-            default:
-                System.out.println("You choose another month");
+        for (int i = 0; i < label.length(); i++) {
+            System.out.print("#");
+        }
+
+        System.out.println("");
+
+        for (int i = 0; i < months.length; i++) {
+            System.out.println(months[i]);
         }
     }
 }
